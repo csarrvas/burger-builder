@@ -1,0 +1,21 @@
+#upload {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#upload>button {
+  padding: 7px 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0px 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #323331;
+  border: 2px solid #aaa;
+}
+
+#upload>button:hover {
+  background-color: #61645d;
+}

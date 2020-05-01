@@ -1,0 +1,25 @@
+#burger-editor {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#burgerSelector {
+  margin: 20px;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  background-color: #873890;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+#burger-editor>button {
+  margin: 20px;
+  margin-top: 10px;
+  padding: 7px 10px;
+  background-color: rgb(226, 117, 15);
+  border: 2px solid #ffc824;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}

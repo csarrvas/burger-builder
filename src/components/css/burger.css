@@ -1,0 +1,286 @@
+#burger-builder {
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  background-image: url(/images/body.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+#burger-builder>* {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#burger-builder>#burger {
+  width: 300px;
+  border: 2px solid #bbb;
+  background-color: rgba(200,200,200,0.2);
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#burger>* {
+  margin: 3px 0px;
+  animation: 1s gum 1;
+}
+
+#burger>.top-bread {
+  width: 50%;
+  height: 35px;
+  border: 1px solid #ba8030;
+  border-top-right-radius: 100px 35px;
+  border-top-left-radius: 100px 35px;
+  background: linear-gradient(180deg, rgba(176,101,2,1) 0%, rgba(184,111,1,1) 60%, rgba(207,167,106,1) 100%);
+}
+
+#burger>.Maritime-Mustard,
+#burger>.Krusty-Ketchup {
+  width: 40%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #fcd65b;
+}
+
+#burger>.Krusty-Ketchup {
+  background-color:	#ca0000;
+}
+
+#burger>.Sea-Lettuce {
+  width: 55%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #278d05;
+}
+
+#burger>.Sea-Tomatoes,
+#burger>.Sea-Onion {
+  width: 35%;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #ed3837;
+}
+
+#burger>.Undersea-Cheese {
+  width: 55%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #ffc827;
+}
+
+#burger>.Sea-Pickles {
+  width: 30%;
+  height: 7px;
+  border-radius: 20px;
+  background-color: #42aa1b;
+}
+
+#burger>.Sea-Onion {
+  background-color: #8d3a96;
+}
+
+#burger>.Krabby-Patty {
+  width: 55%;
+  height: 13px;
+  border-radius: 3px;
+  background-color: #875b1b;
+}
+
+#burger>.bottom-bread {
+  width: 50%;
+  height: 20px;
+  border: 1px solid #ba8030;
+  border-bottom-right-radius: 35px 100px;
+  border-bottom-left-radius: 35px 100px;
+  background: linear-gradient(0deg, rgba(176,101,2,1) 0%, rgba(184,111,1,1) 60%, rgba(207,167,106,1) 100%);
+}
+
+#burger>div:hover {
+  animation: 1s click 1;
+}
+
+#burger>div:first-of-type:hover,
+#burger>div:last-of-type:hover {
+  animation: 1s swing 1;
+}
+
+#burger-builder>p {
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+#add-buttons,
+#remove-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#add-buttons>button,
+#remove-buttons>button,
+#save_button,
+#reset_button,
+.success,
+.error {
+  padding: 7px 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 0px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#add-buttons>button,
+.success {
+  background-color: #37a80e;
+  border: 2px solid yellowgreen;
+}
+
+#remove-buttons>button,
+.error {
+  background-color: #ce0707;
+  border: 2px solid #fa504c;
+}
+
+#add-buttons>button:hover {
+  background-color: #3fc40f;
+}
+
+#remove-buttons>button:hover {
+  background-color: #ee0f0f;
+}
+
+#save_button,
+#reset_button {
+  background-color: #1b2dd3;
+  border: 2px solid rgb(57, 75, 238);
+
+}
+
+#save_button:hover,
+#reset_button:hover {
+  background-color: #202ef3;
+}
+
+.success,
+.error {
+  width: 25%;
+  margin: 0px auto;
+  margin-top: 25px;
+}
+
+#burger-ingredients {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+#burger-ingredients>img {
+  width: 50%;
+  margin: 0px auto;
+}
+
+form {
+  margin-top: 35px !important;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr / repeat(3, 1fr);
+}
+
+#burgerName {
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  #add-buttons,
+  #remove-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #add-buttons,
+  #remove-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #burger-ingredients>img {
+    width: 100%;
+  }
+
+  form {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  #burgerName {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .success,
+  .error {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #add-buttons,
+  #remove-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+	#burger-builder>#burger {
+    width: 100%;
+  }
+}
+
+@keyframes swing{
+	20%{
+		transform: scale(0.7) rotate(-6deg);
+	}
+	30%, 70%{
+		transform: scale(1.1) rotate(6deg);
+	}
+	50%, 90%{
+		transform: scale(1.1) rotate(-6deg);
+	}
+}
+
+@keyframes click{
+	25%, 75%{
+		transform: scale(0.8);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+
+@keyframes gum{
+	30%{
+		transform: scaleX(1.25) scaleY(0.75);
+	}
+	40%{
+		transform: scaleX(0.75) scaleY(1.25);
+	}
+	60%{
+		transform: scaleX(1.05) scaleY(0.95);
+	}
+	70%{
+		transform: scaleX(0.95) scaleY(1.05);
+	}
+}
