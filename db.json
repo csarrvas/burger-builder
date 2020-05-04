@@ -1,0 +1,15 @@
+{
+  "hamburgers": [
+    {
+      "name": "Kraby Patty",
+      "ingredients": [
+        "Maritime Mustard",
+        "Krusty Ketchup",
+        "Sea Lettuce",
+        "Sea Onion",
+        "Krabby Patty"
+      ],
+      "id": 0
+    }
+  ]
+}
