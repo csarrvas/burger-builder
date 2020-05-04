@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/header.css';
+import PropTypes from 'prop-types';
 
 const Header = ({ change }) => {
   return (
@@ -15,5 +16,9 @@ const Header = ({ change }) => {
     </header>
   );
 }
- 
+
+Header.propTypes = {
+  change: PropTypes.func.isRequired
+}
+
 export default Header;

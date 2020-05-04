@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Burger from './Burger';
 import './css/listKrabbyPatty.css';
+import PropTypes from 'prop-types';
 
 class ListKrabbyPatty extends Component {
   constructor(props) {
@@ -30,5 +31,9 @@ class ListKrabbyPatty extends Component {
     );
   }
 }
- 
+
+ListKrabbyPatty.propTypes = {
+  ls: PropTypes.object.isRequired
+}
+
 export default ListKrabbyPatty;

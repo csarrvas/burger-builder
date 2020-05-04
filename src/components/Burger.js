@@ -3,6 +3,7 @@ import Details from './Details';
 import { availableIngredients } from '../helpers/ingredientsDetails';
 import { printMessage } from '../helpers/ui';
 import './css/burger.css';
+import PropTypes from 'prop-types';
 
 class Burger extends Component {
   constructor(props) {
@@ -88,5 +89,12 @@ class Burger extends Component {
     );
   }
 }
- 
+
+Burger.propTypes = {
+  ls: PropTypes.object.isRequired,
+  id: PropTypes.number,
+  burger: PropTypes.object,
+  update: PropTypes.func
+}
+
 export default Burger;

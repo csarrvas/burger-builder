@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ingredientsDetail } from '../helpers/ingredientsDetails';
 import './css/details.css';
+import PropTypes from 'prop-types';
 
 class Details extends Component {
   constructor(props) {
@@ -75,5 +76,9 @@ class Details extends Component {
     );
   }
 }
- 
+
+Details.propTypes = {
+  ingredients: PropTypes.array.isRequired,
+}
+
 export default Details;

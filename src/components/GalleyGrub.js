@@ -2,6 +2,7 @@ import React from 'react';
 import './css/galleyGrub.css';
 import clientAxios from '../config/axios';
 import { printMessage } from '../helpers/ui';
+import PropTypes from 'prop-types';
 
 const updateJsonFile = async (data) => {
   try {
@@ -29,5 +30,9 @@ const GalleyGrub = ({ ls }) => {
     </div>
   );
 }
- 
+
+GalleyGrub.propTypes = {
+  ls: PropTypes.object.isRequired,
+}
+
 export default GalleyGrub;
